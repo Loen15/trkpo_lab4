@@ -30,7 +30,8 @@ def message_to_text(message):
     case 'MessageMediaType.WEB_PAGE':
       return 'Отправил Вам ссылку'
 #    case 'MessageMediaType.DICE':
-#    case 'MessageMediaType.GAME':
+    case 'MessageMediaType.GAME':
+      return 'Отправил Вам игру'
     case _:
       return ' '
 
