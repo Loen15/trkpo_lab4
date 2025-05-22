@@ -40,7 +40,7 @@ name = 'чат с кем-то'
 # функция генерирующая чат для GPT
 with open(f'telegram raw/{name}.json', 'r', encoding='utf-8') as json_file:
   data = json.load(json_file)  
-  msgs = [{"role":"system","content":"промт"}] # вставить промт
+  msgs = [{"role":"system","content":"Ты Ваня, общайся в дружеской манере"}]
   is_self = 'user546555037' # вставить свой id из файла
   for msg in data['messages']:
     msgs.append({"role":"assistant" if msg['from_id'] == is_self else "user","content": message_to_text(msg)})  
