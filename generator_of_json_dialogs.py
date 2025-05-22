@@ -29,9 +29,10 @@ def message_to_text(message):
       return 'Отправил Вам опрос'
     case 'MessageMediaType.WEB_PAGE':
       return 'Отправил Вам ссылку'
+    case 'MessageMediaType.GAME':
+      return 'Отправил Вам игру'
     case 'MessageMediaType.DICE':
       return 'Кинул 6-гранный игральный кубик'
-#    case 'MessageMediaType.GAME':
     case _:
       return ' '
 
