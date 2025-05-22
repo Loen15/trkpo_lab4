@@ -32,7 +32,7 @@ def message_to_text(message):
     case 'MessageMediaType.GAME':
       return 'Отправил Вам игру'
     case 'MessageMediaType.DICE':
-      return 'Кинул 6-гранный игральный кубик'
+      return 'Кинул 6-гранный игральный кубик и отправил Вам'
     case _:
       return ' '
 
