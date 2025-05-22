@@ -30,7 +30,7 @@ def message_to_text(message):
     case 'MessageMediaType.WEB_PAGE':
       return 'Отправил Вам ссылку'
     case 'MessageMediaType.DICE':
-      return 'Кинул 6-гранный кубик'
+      return 'Кинул 6-гранный игральный кубик'
 #    case 'MessageMediaType.GAME':
     case _:
       return ' '
